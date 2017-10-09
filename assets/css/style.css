@@ -504,6 +504,12 @@ button:focus {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .mu-about-right {
+    margin-top: 30px;
+  }
+}
+
 
 /*--------------------*/
 /* EVENT SCHEDULE */
