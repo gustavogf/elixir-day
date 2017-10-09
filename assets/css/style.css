@@ -506,7 +506,6 @@ button:focus {
 }
 
 
-
 /*--------------------*/
 /* EVENT SCHEDULE */
 /*--------------------*/
@@ -1041,7 +1040,13 @@ button:focus {
   transition: all 0.5s;
 }
 
-
+.heart {
+  vertical-align: bottom;
+  transform: scaleY(1.1) rotate(90deg);
+  display: inline-block;
+  margin-top: 7px;
+  margin-right: 2px;
+}
 
 /*--------------------*/
 /* RESPONSIVE STYLE */
