@@ -227,12 +227,28 @@ button:focus {
 /* HEADER */
 /*--------------------*/
 
+@keyframes konami-code {
+  from {
+    background-color: #FF4081;
+  }
+  to {
+    background-color: #000000;
+  }
+}
+
 .mu-hero-overlay {
   display: inline;
   float: left;
   opacity: 0.94;
   width: 100%;
   background-color: #000000;
+}
+
+.mu-hero-overlay.konami-code {
+  animation-name: konami-code;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .mu-logo-area {
@@ -407,6 +423,7 @@ button:focus {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > .active > a,
