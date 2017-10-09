@@ -775,7 +775,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000000;
+  background-image: linear-gradient(to left, #000000, #6200EA);
   opacity: 0.8;
 }
 

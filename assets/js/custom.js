@@ -32,7 +32,6 @@
 	jQuery(window).bind('scroll', function () {
     if ($(window).scrollTop() > 150) {
         $('.mu-navbar').addClass('mu-nav-show');
-
 	    } else {
 	        $('.mu-navbar').removeClass('mu-nav-show');
 	    }
@@ -48,7 +47,7 @@
 	// Cache selectors
 	var lastId,
 	topMenu = $(".mu-menu"),
-	topMenuHeight = topMenu.outerHeight()+13,
+	topMenuHeight = topMenu.outerHeight()+53,
 	// All list items
 	menuItems = topMenu.find('a[href^=\\#]'),
 	// Anchors corresponding to menu items
@@ -61,7 +60,7 @@
 	// so we can get a fancy scroll animation
 	menuItems.click(function(e){
 	  var href = $(this).attr("href"),
-	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+22;
+	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+32;
 	  jQuery('html, body').stop().animate({
 	      scrollTop: offsetTop
 	  }, 500);
