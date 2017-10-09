@@ -528,7 +528,6 @@ button:focus {
 .mu-schedule-content-area  {
   display: inline;
   float: left;
-  margin-top: 50px;
   width: 100%;
 }
 
@@ -792,7 +791,7 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to left, #000000, #6200EA);
+  background-color: #000000;
   opacity: 0.8;
 }
 
@@ -1287,7 +1286,7 @@ button:focus {
   }
 
   .mu-hero-featured-content h2 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .mu-event-date-line {

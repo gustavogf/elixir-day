@@ -47,7 +47,7 @@
 	// Cache selectors
 	var lastId,
 	topMenu = $(".mu-menu"),
-	topMenuHeight = topMenu.outerHeight()+53,
+	topMenuHeight = topMenu.outerHeight()+100,
 	// All list items
 	menuItems = topMenu.find('a[href^=\\#]'),
 	// Anchors corresponding to menu items
