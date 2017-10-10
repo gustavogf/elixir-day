@@ -783,10 +783,10 @@ button:focus {
 }
 
 .mu-venue-area {
-  background-image: url("/assets/images/quero-office.jpeg");
+  background-image: url("/assets/images/office-mosaico@2x.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 900px;
+  background-size: cover;
   display: inline;
   float: left;
   width: 100%;
@@ -806,15 +806,15 @@ button:focus {
 
 @media screen and (max-width: 992px) {
   .mu-venue-area {
-    background-size: cover;
-    background-position: 0 400px;
+    background-size: 1500px;
+    background-position: bottom left;
   }
 }
 
 @media screen and (max-width: 480px) {
   .mu-venue-area {
-    background-size: cover;
-    background-position: bottom;
+    background-size: 900px;
+    background-position: bottom left;
   }
 }
 
