@@ -305,8 +305,6 @@ button:focus {
 }
 
 .mu-hero-featured-content {
-  display: inline;
-  float: right;
   margin-top: 50px;
   text-align: center;
   width: 100%;
@@ -813,8 +811,8 @@ button:focus {
 
 @media screen and (max-width: 480px) {
   .mu-venue-area {
-    background-size: 900px;
-    background-position: bottom left;
+    background-size: 1400px;
+    background-position: bottom right;
   }
 }
 
@@ -1294,7 +1292,7 @@ button:focus {
   }
 
   .mu-hero-featured-content {
-    margin-top: 20px;
+    margin: 20px 0;
   }
 
   .mu-hero-featured-content h1 {
