@@ -316,7 +316,7 @@ button:focus {
   text-align: center;
 }
 
-.subscribe-button button {
+.subscribe-button a {
   background-color: #6200EA;
   padding: 20px;
   color: white;
@@ -326,12 +326,12 @@ button:focus {
 }
 
 @media screen and (max-width: 480px) {
-  .subscribe-button button {
+  .subscribe-button a {
     font-size: 18px;
   }
 }
 
-.subscribe-button button:hover {
+.subscribe-button a:hover {
   background-color: #FF4081;
 }
 
