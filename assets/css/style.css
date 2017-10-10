@@ -1045,6 +1045,7 @@ button:focus {
   display: inline-block;
   margin-top: 7px;
   margin-right: 2px;
+  margin-left: 4px;
 }
 
 /*--------------------*/
