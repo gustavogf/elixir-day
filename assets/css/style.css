@@ -58,7 +58,7 @@ ul {
 
 ul li {
   list-style: disc;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.59;
 }
 
@@ -229,7 +229,7 @@ button:focus {
 
 @keyframes konami-code {
   from {
-    background-color: #FF4081;
+    background-color: #18ACC4;
   }
   to {
     background-color: #000000;
@@ -241,7 +241,13 @@ button:focus {
   float: left;
   opacity: 0.94;
   width: 100%;
-  background-color: #000000;
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  .header-ready {
+    background-color: transparent;
+  }
 }
 
 .mu-hero-overlay.konami-code {
@@ -300,13 +306,13 @@ button:focus {
 .mu-hero-featured-area {
   display: inline;
   float: left;
-  padding: 100px 0 50px;
+  padding-bottom: 80px;
   width: 100%;
 }
 
 .mu-hero-featured-content {
-  margin-top: 50px;
   text-align: center;
+  margin-bottom: 44px;
   width: 100%;
 }
 
@@ -330,7 +336,7 @@ button:focus {
 }
 
 .subscribe-button a:hover {
-  background-color: #FF4081;
+  background-color: #18ACC4;
 }
 
 .mu-hero-featured-content h1 {
@@ -427,7 +433,7 @@ button:focus {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #FF4081;
+  color: #18ACC4;
   background-color: transparent
 }
 
@@ -446,7 +452,7 @@ button:focus {
 
 .navbar-default .navbar-nav > .nav-button > a:hover {
   color: #6200EA;
-  background-color: #FF4081;
+  background-color: #18ACC4;
   color:  #fff;
 }
 
@@ -454,7 +460,7 @@ button:focus {
   color:  #fff;
 }
 .navbar-default .navbar-nav>li>a:hover {
-  color: #FF4081;
+  color: #18ACC4;
 }
 
 /*--------------------*/
@@ -504,7 +510,7 @@ button:focus {
   display: inline;
   float: left;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -518,7 +524,8 @@ button:focus {
 /* EVENT SCHEDULE */
 /*--------------------*/
 
-#mu-schedule {
+#mu-schedule,
+#mu-editions {
   background-color: #f8f8f8;
   display: inline;
   float: left;
@@ -599,7 +606,7 @@ button:focus {
 }
 
 .mu-event-timeline ul li:hover::after {
-  background-color: #FF4081;
+  background-color: #18ACC4;
 }
 
 
@@ -706,9 +713,14 @@ button:focus {
 }
 
 .mu-single-speakers {
-  padding: 0 10px;
   outline: none;
   text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .mu-single-speakers {
+    margin-bottom: 30px;
+  }
 }
 
 .mu-single-speakers img {
@@ -738,8 +750,6 @@ button:focus {
 }
 
 .mu-single-speakers-info {
-  display: inline;
-  float: left;
   margin-top: 20px;
   width: 100%;
 }

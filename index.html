@@ -49,6 +49,7 @@
                 <li><a href="#mu-about">Sobre</a></li>
                 <li><a href="#mu-schedule">Cronograma</a></li>
                 <li><a href="#mu-speakers">Palestrantes</a></li>
+                <li><a href="#mu-editions">Edições Anteriores</a></li>
                 <li><a href="#mu-venue">Local</a></li>
                 <li><a href="#mu-contact">Contato</a></li>
                 <li class="nav-button"><a href="https://elixirday.eventbrite.com">INSCREVA-SE</a></li>
@@ -58,45 +59,35 @@
     </nav>
     <!-- End menu -->
 
-    <div class="mu-hero-overlay">
+    <canvas id="demo-canvas" class="hidden-xs" style="position: absolute; background-color: #000;"></canvas>
+
+    <div class="mu-hero-overlay" id="large-header">
+
       <div class="container">
         <div class="mu-hero-area">
 
           <!-- Start hero featured area -->
-          <div class="mu-hero-featured-area">
+          <div class="mu-hero-featured-area" >
+
             <!-- Start center Logo -->
             <div class="mu-logo-area">
               <!-- text based logo -->
-              <img src="assets/images/PNG-logo-horizontal-gradiente-negativo.png">
+              <img src="assets/images/elixirday-2018.png">
               <!-- image based logo -->
-              <!-- <a class="mu-logo" href="#"><img src="assets/images/logo.jpg" alt="logo img"></a> -->
             </div>
             <!-- End center Logo -->
 
             <div class="mu-hero-featured-content">
-              <h2><i class="fa fa-calendar"></i> 28 DE OUTUBRO DE 2017</h2>
-              <h2><i class="fa fa-clock-o"></i> 8H - 18H</h2>
+              <h2><i class="fa fa-calendar"></i> 24 DE NOVEMBRO DE 2018</h2>
+              <h2><i class="fa fa-clock-o"></i> 9H - 17H</h2>
               <br>
-              <h2><i class="fa fa-map-marker"></i> QUERO EDUCAÇÃO</h2>
+              <a href="#mu-venue"><h2><i class="fa fa-map-marker"></i> QUERO EDUCAÇÃO</h2></a>
               <br>
             </div>
 
             <div class="mu-hero-featured-content subscribe-button">
               <a href="https://elixirday.eventbrite.com">inscreva-se</a>
             </div>
-
-            <div class="mu-hero-featured-content hidden-xs hidden-sm">
-              <div class="mouse_scroll">
-                <div class="mouse">
-                  <div class="wheel"></div>
-                </div>
-                <div>
-                  <span class="m_scroll_arrows unu"></span>
-                  <span class="m_scroll_arrows doi"></span>
-                </div>
-            </div>
-            </div>
-
 
           </div>
           <!-- End hero featured area -->
@@ -112,33 +103,37 @@
     <!-- Start About -->
     <section id="mu-about">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mu-about-area">
-              <!-- Start Feature Content -->
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mu-about-left">
-                    <img class="" src="assets/images/elixir-day-2016.jpg" alt="Men Speaker">
-                    <span>1º Elixir Day, 2016</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mu-about-right">
-                    <h2>2º ELIXIR DAY NA QUERO</h2>
-
-                    <p>O Elixir é uma linguagem de programação funcional que está ganhando destaque por combinar desempenho, disponibilidade, concorrência e facilidade de codar. Nós da Quero Educação já estamos trabalhando com Elixir há algum tempo, e queremos compartilhar com você um pouco da nossa experiência com a linguagem.</p>
-
-                    <p>O evento é dividido em duas partes: na primeira, vamos dar um crash course com os conceitos básicos da linguagem, e também fazer um live coding para todo mundo ter uma experiência hands-on e tirar dúvidas. Os engenheiros do time da Quero estarão à disposição para ajudar nessa etapa.</p>
-
-                    <p>Na segunda parte, vamos promover uma pequena competição de maratona de programação em duplas, com duração de 3 horas, na qual você e sua dupla resolverão uma bateria de questões de algoritmos usando Elixir.</p>
-
-                    <p>Não é necessário ter experiência com a linguagem para participar (as apresentações assumem zero conhecimento em Elixir), mas é bom ter um background sólido em programação. É necessário trazer um laptop para acompanhar o treinamento e participar da maratona.</p>
-                  </div>
-                </div>
+        <div class="mu-about-area">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mu-about-right text-center">
+                <h2>3º ELIXIR DAY NA QUERO</h2>
+                <br>
+                <p>
+                  O Elixir é uma linguagem de programação funcional que está ganhando destaque por combinar desempenho,
+                  disponibilidade, concorrência e facilidade de codar. Nós da Quero Educação já estamos trabalhando com
+                  Elixir há algum tempo, e queremos compartilhar com você um pouco da nossa experiência com a linguagem.
+                </p>
+                <p>
+                  O evento é dividido em duas partes: na primeira, palestrantes selecionados mostrarão alguns cases de
+                  uso do Elixir e falarão sobre suas principais funcionalidades.
+                </p>
+                <p>
+                  Na segunda parte, vamos promover um crash course e um workshop de uso do Elixir, e todos poderão
+                  participar de um game colaborativo que desenvolvemos como showcase. Os engenheiros do time da Quero
+                  estarão à disposição para ajudar nessa etapa.
+                </p>
+                <p>
+                  Não é necessário ter experiência com a linguagem para participar (as apresentações assumem zero
+                  conhecimento em Elixir), mas é bom ter um background sólido em programação. É necessário trazer um
+                  laptop para acompanhar o treinamento e participar do workshop.
+                </p>
+                <p>
+                  O Elixir Day vai acontecer no sábado, 24/11, das 9h às 17h, no escritório da Quero Educação.
+                  Nossas cozinheiras maravilhosas vão servir um almoço de vó no nosso refeitório, e teremos snacks
+                  infinitos o dia todo :D
+                </p>
               </div>
-              <!-- End Feature Content -->
-
             </div>
           </div>
         </div>
@@ -165,46 +160,67 @@
                       <ul>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">8:00</p>
+                            <p class="mu-event-time">9:00</p>
                             <h3>Credenciamento e coffee de boas-vindas</h3>
+                          </div>
+                        </li>
+<!--                         <li>
+                          <div class="mu-single-event">
+                            <p class="mu-event-time">10:00</p>
+                            <h3>Palestra externa (introdução?)</h3>
+                            <span>à definir</span>
+                          </div>
+                        </li> -->
+                        <li>
+                          <div class="mu-single-event">
+                            <p class="mu-event-time">10:00</p>
+                            <h3>Showcase</h3>
+                            <span>Giovane Tomaz - Quero Educação</span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">9:00</p>
-                            <h3>Treinamento: crash course e live coding</h3>
-                            <span>Daniel Moreira (Pufe)</span>
+                            <p class="mu-event-time">11:00</p>
+                            <h3>Showcase</h3>
+                            <span>Erich Rodrigues - Quero Educação</span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
                             <p class="mu-event-time">12:00</p>
-                            <h3>Almoço de vó</h3>
-                            <span>Cozinheiras da Quero</span>
+                            <h3>Almoço</h3>
+                            <span></span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">13:00</p>
-                            <h3>Talk: O essencial da programação funcional em Elixir</h3>
-                            <span>Ulisses Almeida</span>
+                            <p class="mu-event-time">13:30</p>
+                            <h3>Erlang OTP What's in the Box</h3>
+                            <span>João Britto - Plataformatec</span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">14:00</p>
-                            <h3>Início da maratona</h3>
+                            <p class="mu-event-time">14:30</p>
+                            <h3>Crash Course</h3>
+                            <span>Daniel Moreira - Quero Educação</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="mu-single-event">
+                            <p class="mu-event-time">15:30</p>
+                            <h3>Workshop (Game colaborativo)</h3>
+                            <span>Daniel Moreira - Quero Educação</span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
                             <p class="mu-event-time">17:00</p>
-                            <h3>Fim da maratona, premiação e coffee de fechamento</h3>
+                            <h3>Encerramento + Happy Hour</h3>
                           </div>
                         </li>
                       </ul>
                     </div>
-
 
                 </div>
 
@@ -229,26 +245,65 @@
               </div>
 
               <!-- Start Speakers Content -->
-              <div class="mu-speakers-content">
-                <!-- Start single speaker -->
-                <div class="mu-single-speakers">
-                  <img src="assets/images/ulisses.jpg" alt="speaker img">
-                  <div class="mu-single-speakers-info">
-                    <h3>Ulisses Almeida</h3>
-                    <p>Software Developer na Plataformatec</p>
+              <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/erich.jpeg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>Erich Rodrigues</h3>
+                      <p>Desenvolvedor na Quero Educação</p>
+                    </div>
                   </div>
+                  <!-- End single speaker -->
                 </div>
-                <!-- End single speaker -->
+
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/giovane.jpeg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>Giovane</h3>
+                      <p>Desenvolvedor na Quero Educação</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/joao-britto.jpg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>João Britto</h3>
+                      <p>Plataformatec</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
 
                 <!-- Start single speaker -->
-                <div class="mu-single-speakers">
-                  <img src="assets/images/pufe.jpg" alt="speaker img">
+<!--                 <div class="mu-single-speakers">
+                  <img src="assets/images/palestrante.jpeg" alt="speaker img">
                   <div class="mu-single-speakers-info">
-                    <h3>Daniel Moreira (Pufe)</h3>
-                    <p>Data Bender na Quero Educação</p>
+                    <h3>Palestrante</h3>
+                    <p>-</p>
                   </div>
-                </div>
+                </div> -->
                 <!-- End single speaker -->
+
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/pufe.jpg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>Daniel Moreira (Pufe)</h3>
+                      <p>Data Bender na Quero Educação</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
 
               </div>
               <!-- End Speakers Content -->
@@ -259,6 +314,97 @@
       </div>
     </section>
     <!-- End Speakers -->
+
+    <section id="mu-editions">
+      <div class="container">
+        <div class="mu-schedule-area">
+          <div class="mu-title-area">
+            <h2 class="mu-title">EDIÇÕES ANTERIORES</h2>
+            <br>
+            <br>
+            <h3><a href="2017" target="_blank">2017</a></h3>
+            <br>
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <!-- <span>2º Elixir Day, 2017</span> -->
+              <img class="" src="assets/images/2017/ElixirDay_4811.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_4818.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_4712.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_5039.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_4524.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_5161.jpg" alt="Elixir Day 2017">
+            </div>
+          </div>
+
+          <div class="mu-title-area">
+            <br>
+            <br>
+            <h3>2016</h3>
+            <br>
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <!-- <span>2º Elixir Day, 2017</span> -->
+              <img class="" src="assets/images/2016/P1020782.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020999.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020793.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020906.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020767.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/elixir-day-2016.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Start Venue -->
     <section id="mu-venue">
@@ -276,7 +422,6 @@
               <h2>LOCAL</h2>
               <h3>Escritório da Quero Educação</h3>
               <h4>Avenida São João, 1701, São José dos Campos - SP</h4>
-              <p>Carinhosamente apelidado de "Castelinho", nosso novo espaço é um grande upgrade em relação ao escritório do ano passado. Apesar de não ser uma estrutura imutável, nosso escritório ficou muito mais funcional! (pun intended)</p>
             </div>
           </div>
 
@@ -299,6 +444,7 @@
                 <div class="mu-social-media">
                   <a target="_blank" href="https://www.facebook.com/queroedu"><i class="fa fa-facebook"></i></a>
                   <a target="_blank" href="https://twitter.com/search?q=%23elixirday"><i class="fa fa-twitter"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/queroedu"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
               <!-- End Contact Content -->
@@ -335,5 +481,196 @@
     <!-- Custom js -->
     <script type="text/javascript" src="assets/js/custom.js"></script>
 
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
   </body>
 </html>
+
+<script>
+  (function() {
+
+    var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+
+    // Main
+    initHeader();
+    initAnimation();
+    addListeners();
+
+    function initHeader() {
+      largeHeader = $('#large-header');
+
+        width = window.innerWidth;
+        height = largeHeader.height();
+        target = {x: width/2, y: height/2};
+
+        canvas = document.getElementById('demo-canvas');
+        canvas.width = width;
+        canvas.height = height;
+        ctx = canvas.getContext('2d');
+
+        // create points
+        points = [];
+        for(var x = 0; x < width; x = x + width/20) {
+            for(var y = 0; y < height; y = y + height/20) {
+                var px = x + Math.random()*width/20;
+                var py = y + Math.random()*height/20;
+                var p = {x: px, originX: px, y: py, originY: py };
+                points.push(p);
+            }
+        }
+
+        // for each point find the 5 closest points
+        for(var i = 0; i < points.length; i++) {
+            var closest = [];
+            var p1 = points[i];
+            for(var j = 0; j < points.length; j++) {
+                var p2 = points[j]
+                if(!(p1 == p2)) {
+                    var placed = false;
+                    for(var k = 0; k < 5; k++) {
+                        if(!placed) {
+                            if(closest[k] == undefined) {
+                                closest[k] = p2;
+                                placed = true;
+                            }
+                        }
+                    }
+
+                    for(var k = 0; k < 5; k++) {
+                        if(!placed) {
+                            if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                                closest[k] = p2;
+                                placed = true;
+                            }
+                        }
+                    }
+                }
+            }
+            p1.closest = closest;
+        }
+
+        // assign a circle to each point
+        for(var i in points) {
+            var c = new Circle(points[i], 2+Math.random()*2, 'rgba(255,255,255,0.3)');
+            points[i].circle = c;
+        }
+
+        largeHeader.addClass('header-ready');
+    }
+
+    // Event handling
+    function addListeners() {
+        if(!('ontouchstart' in window)) {
+            window.addEventListener('mousemove', mouseMove);
+        }
+        window.addEventListener('scroll', scrollCheck);
+        window.addEventListener('resize', resize);
+    }
+
+    function mouseMove(e) {
+        var posx = posy = 0;
+        if (e.pageX || e.pageY) {
+            posx = e.pageX;
+            posy = e.pageY;
+        }
+        else if (e.clientX || e.clientY)    {
+            posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+            posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+        target.x = posx;
+        target.y = posy;
+    }
+
+    function scrollCheck() {
+        if(document.body.scrollTop > height) animateHeader = false;
+        else animateHeader = true;
+    }
+
+    function resize() {
+        width = window.innerWidth;
+        height = largeHeader.height();
+        canvas.width = width;
+        canvas.height = height;
+    }
+
+    // animation
+    function initAnimation() {
+        animate();
+        for(var i in points) {
+            shiftPoint(points[i]);
+        }
+    }
+
+    function animate() {
+        if(animateHeader) {
+            ctx.clearRect(0,0,width,height);
+            for(var i in points) {
+                // detect points in range
+                if(Math.abs(getDistance(target, points[i])) < 4000) {
+                    points[i].active = 0.3;
+                    points[i].circle.active = 0.6;
+                } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                    points[i].active = 0.1;
+                    points[i].circle.active = 0.3;
+                } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                    points[i].active = 0.02;
+                    points[i].circle.active = 0.1;
+                } else {
+                    points[i].active = 0;
+                    points[i].circle.active = 0;
+                }
+
+                drawLines(points[i]);
+                points[i].circle.draw();
+            }
+        }
+        requestAnimationFrame(animate);
+    }
+
+    function shiftPoint(p) {
+        TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*100,
+            y: p.originY-50+Math.random()*100, ease:Circ.easeInOut,
+            onComplete: function() {
+                shiftPoint(p);
+            }});
+    }
+
+    // Canvas manipulation
+    function drawLines(p) {
+        if(!p.active) return;
+        for(var i in p.closest) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p.closest[i].x, p.closest[i].y);
+            ctx.strokeStyle = 'rgba(24,172,196,'+ p.active+')';
+            ctx.stroke();
+        }
+    }
+
+    function Circle(pos,rad,color) {
+        var _this = this;
+
+        // constructor
+        (function() {
+            _this.pos = pos || null;
+            _this.radius = rad || null;
+            _this.color = color || null;
+        })();
+
+        this.draw = function() {
+            if(!_this.active) return;
+            ctx.beginPath();
+            ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = 'rgba(24,172,196,'+ _this.active+')';
+            ctx.fill();
+        };
+    }
+
+    // Util
+    function getDistance(p1, p2) {
+        return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+    }
+
+})();
+</script>

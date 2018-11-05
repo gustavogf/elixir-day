@@ -49,7 +49,7 @@
 	topMenu = $(".mu-menu"),
 	topMenuHeight = topMenu.outerHeight()+100,
 	// All list items
-	menuItems = topMenu.find('a[href^=\\#]'),
+	menuItems = $('a[href^=\\#]'),
 	// Anchors corresponding to menu items
 	scrollItems = menuItems.map(function(){
 	  var item = $($(this).attr("href"));
