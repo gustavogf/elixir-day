@@ -310,6 +310,12 @@ button:focus {
   width: 100%;
 }
 
+@media (max-width: 480px) {
+  .mu-hero-featured-area {
+    padding-bottom: 40px;
+  }
+}
+
 .mu-hero-featured-content {
   text-align: center;
   margin-bottom: 44px;
@@ -482,6 +488,12 @@ button:focus {
   width: 100%;
 }
 
+@media (max-width: 480px) {
+  .mu-about-area {
+    padding: 40px 0;
+  }
+}
+
 .mu-title-area {
   text-align: center;
   padding: 0 120px;
@@ -537,6 +549,12 @@ button:focus {
   float: left;
   padding: 100px 0;
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .mu-schedule-area {
+    padding: 40px 0;
+  }
 }
 
 .mu-schedule-content-area  {
@@ -703,6 +721,12 @@ button:focus {
 .mu-speakers-area {
   padding: 100px 0;
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .mu-speakers-area {
+    padding: 40px 0;
+  }
 }
 
 .mu-speakers-content {
