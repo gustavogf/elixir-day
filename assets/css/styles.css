@@ -1662,4 +1662,9 @@ button:focus {
   100% { opacity: 1; }
 }
 
-
+.background-canvas {
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+}
