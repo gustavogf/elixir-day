@@ -9,7 +9,7 @@
   function initHeader() {
     largeHeader = $('#large-header');
     width = window.innerWidth;
-    height = largeHeader.height();
+    height = 758;
     target = {x: width/2, y: height/2};
     canvas = document.getElementById('demo-canvas');
     canvas.width = width;
