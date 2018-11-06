@@ -244,10 +244,8 @@ button:focus {
   background-color: #000;
 }
 
-@media (min-width: 768px) {
-  .header-ready {
-    background-color: transparent;
-  }
+.header-ready {
+  background-color: transparent;
 }
 
 .mu-hero-overlay.konami-code {
