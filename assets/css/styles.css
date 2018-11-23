@@ -250,6 +250,12 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .speakers-first-row {
+    margin-bottom: 32px;
+  }
+}
+
 .mu-hero-overlay.konami-code {
   animation-name: konami-code;
   animation-duration: 0.5s;
@@ -1694,3 +1700,4 @@ button:focus {
   top: 0;
   left: 0;
 }
+
