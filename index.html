@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Inscrição e informações do Elixir Day, evento de tecnologia da Quero Educação que reúne desenvolvedores interessados em saber mais sobre a linguagem de programação funcional Elixir.">
+    <meta name="description" content="Inscrição e informações do Elixir Day 2018, evento de tecnologia da Quero Educação que reúne desenvolvedores interessados em saber mais sobre a linguagem de programação funcional Elixir.">
     <meta name="keywords" content="elixir, elixir day, quero educação">
     <meta name="robots" content="index, follow">
-    <meta property="og:image" content="assets/images/elixir-day-banner.png">
+    <meta property="og:image" content="http://elixirday.com/assets/images/elixir-day-banner-2018-min.png">
     <meta property="og:image:type" content="image/png">
-    <title>Elixir Day - Quero Educação</title>
+    <meta property="og:url" content="http://elixirday.com/">
+    <meta property="og:title" content="Elixir Day 2018 - Quero Educação">
+    <meta property="og:description" content="Inscrição e informações do Elixir Day 2018, evento de tecnologia da Quero Educação que reúne desenvolvedores interessados em saber mais sobre a linguagem de programação funcional Elixir.">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="2085125501539862">
+    <title>Elixir Day 2018 - Quero Educação</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -17,7 +22,7 @@
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Main Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
   </head>
   <body>
 
@@ -49,6 +54,7 @@
                 <li><a href="#mu-about">Sobre</a></li>
                 <li><a href="#mu-schedule">Cronograma</a></li>
                 <li><a href="#mu-speakers">Palestrantes</a></li>
+                <li><a href="#mu-editions">Edições Anteriores</a></li>
                 <li><a href="#mu-venue">Local</a></li>
                 <li><a href="#mu-contact">Contato</a></li>
                 <li class="nav-button"><a href="https://elixirday.eventbrite.com">INSCREVA-SE</a></li>
@@ -58,45 +64,35 @@
     </nav>
     <!-- End menu -->
 
-    <div class="mu-hero-overlay">
+    <canvas id="demo-canvas" class="background-canvas hidden-xs"></canvas>
+
+    <div class="mu-hero-overlay" id="large-header">
+
       <div class="container">
         <div class="mu-hero-area">
 
           <!-- Start hero featured area -->
-          <div class="mu-hero-featured-area">
+          <div class="mu-hero-featured-area" >
+
             <!-- Start center Logo -->
             <div class="mu-logo-area">
               <!-- text based logo -->
-              <img src="assets/images/PNG-logo-horizontal-gradiente-negativo.png">
+              <img src="assets/images/elixirday-2018.png">
               <!-- image based logo -->
-              <!-- <a class="mu-logo" href="#"><img src="assets/images/logo.jpg" alt="logo img"></a> -->
             </div>
             <!-- End center Logo -->
 
             <div class="mu-hero-featured-content">
-              <h2><i class="fa fa-calendar"></i> 28 DE OUTUBRO DE 2017</h2>
-              <h2><i class="fa fa-clock-o"></i> 8H - 18H</h2>
+              <h2><i class="fa fa-calendar"></i> 24 DE NOVEMBRO DE 2018</h2>
+              <h2><i class="fa fa-clock-o"></i> 9H - 17H</h2>
               <br>
-              <h2><i class="fa fa-map-marker"></i> QUERO EDUCAÇÃO</h2>
+              <a href="#mu-venue"><h2><i class="fa fa-map-marker"></i> QUERO EDUCAÇÃO</h2></a>
               <br>
             </div>
 
             <div class="mu-hero-featured-content subscribe-button">
               <a href="https://elixirday.eventbrite.com">inscreva-se</a>
             </div>
-
-            <div class="mu-hero-featured-content hidden-xs hidden-sm">
-              <div class="mouse_scroll">
-                <div class="mouse">
-                  <div class="wheel"></div>
-                </div>
-                <div>
-                  <span class="m_scroll_arrows unu"></span>
-                  <span class="m_scroll_arrows doi"></span>
-                </div>
-            </div>
-            </div>
-
 
           </div>
           <!-- End hero featured area -->
@@ -112,33 +108,37 @@
     <!-- Start About -->
     <section id="mu-about">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mu-about-area">
-              <!-- Start Feature Content -->
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mu-about-left">
-                    <img class="" src="assets/images/elixir-day-2016.jpg" alt="Men Speaker">
-                    <span>1º Elixir Day, 2016</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mu-about-right">
-                    <h2>2º ELIXIR DAY NA QUERO</h2>
-
-                    <p>O Elixir é uma linguagem de programação funcional que está ganhando destaque por combinar desempenho, disponibilidade, concorrência e facilidade de codar. Nós da Quero Educação já estamos trabalhando com Elixir há algum tempo, e queremos compartilhar com você um pouco da nossa experiência com a linguagem.</p>
-
-                    <p>O evento é dividido em duas partes: na primeira, vamos dar um crash course com os conceitos básicos da linguagem, e também fazer um live coding para todo mundo ter uma experiência hands-on e tirar dúvidas. Os engenheiros do time da Quero estarão à disposição para ajudar nessa etapa.</p>
-
-                    <p>Na segunda parte, vamos promover uma pequena competição de maratona de programação em duplas, com duração de 3 horas, na qual você e sua dupla resolverão uma bateria de questões de algoritmos usando Elixir.</p>
-
-                    <p>Não é necessário ter experiência com a linguagem para participar (as apresentações assumem zero conhecimento em Elixir), mas é bom ter um background sólido em programação. É necessário trazer um laptop para acompanhar o treinamento e participar da maratona.</p>
-                  </div>
-                </div>
+        <div class="mu-about-area">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mu-about-right">
+                <h2 class="text-center">3º ELIXIR DAY NA QUERO</h2>
+                <br>
+                <p>
+                  O Elixir é uma linguagem de programação funcional que está ganhando destaque por combinar desempenho,
+                  disponibilidade, concorrência e facilidade de codar. Nós da Quero Educação já estamos trabalhando com
+                  Elixir há algum tempo, e queremos compartilhar com você um pouco da nossa experiência com a linguagem.
+                </p>
+                <p>
+                  O evento é dividido em duas partes: na primeira, palestrantes selecionados mostrarão alguns cases de
+                  uso do Elixir e falarão sobre suas principais funcionalidades.
+                </p>
+                <p>
+                  Na segunda parte, vamos promover um crash course e um workshop de uso do Elixir, e todos poderão
+                  participar de um game colaborativo que desenvolvemos como showcase. Os engenheiros do time da Quero
+                  estarão à disposição para ajudar nessa etapa.
+                </p>
+                <p>
+                  Não é necessário ter experiência com a linguagem para participar (as apresentações assumem zero
+                  conhecimento em Elixir), mas é bom ter um background sólido em programação. É necessário trazer um
+                  laptop para acompanhar o treinamento e participar do workshop.
+                </p>
+                <p>
+                  O Elixir Day vai acontecer no sábado, 24/11, das 9h às 17h, no escritório da Quero Educação.
+                  Nossas cozinheiras maravilhosas vão servir um almoço de vó no nosso refeitório, e teremos snacks
+                  infinitos o dia todo :D
+                </p>
               </div>
-              <!-- End Feature Content -->
-
             </div>
           </div>
         </div>
@@ -165,46 +165,66 @@
                       <ul>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">8:00</p>
+                            <p class="mu-event-time">9:00</p>
                             <h3>Credenciamento e coffee de boas-vindas</h3>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">9:00</p>
-                            <h3>Treinamento: crash course e live coding</h3>
-                            <span>Daniel Moreira (Pufe)</span>
+                            <p class="mu-event-time">10:00</p>
+                            <h3>Iniciando em Elixir - Ingredientes básicos para preparar poções</h3>
+                            <span>João Vitor - Quero Educação</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="mu-single-event">
+                            <p class="mu-event-time">10:50</p>
+                            <h3>Metaprogramação com Elixir</h3>
+                            <span>Felipe Renan - Plataformatec</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="mu-single-event">
+                            <p class="mu-event-time">11:20</p>
+                            <h3>Processamento paralelo de mensagens em Elixir</h3>
+                            <span>Erich Rodrigues - Quero Educação</span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
                             <p class="mu-event-time">12:00</p>
-                            <h3>Almoço de vó</h3>
-                            <span>Cozinheiras da Quero</span>
+                            <h3>Almoço</h3>
+                            <span></span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">13:00</p>
-                            <h3>Talk: O essencial da programação funcional em Elixir</h3>
-                            <span>Ulisses Almeida</span>
+                            <p class="mu-event-time">13:30</p>
+                            <h3>Erlang OTP What's in the Box</h3>
+                            <span>João Britto - Plataformatec</span>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
-                            <p class="mu-event-time">14:00</p>
-                            <h3>Início da maratona</h3>
+                            <p class="mu-event-time">14:30</p>
+                            <h3>Crash Course</h3>
+                            <span>Otto Henrique & Marcelo Koga - Quero Educação</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="mu-single-event">
+                            <p class="mu-event-time">15:30</p>
+                            <h3>Workshop (Game colaborativo)</h3>
                           </div>
                         </li>
                         <li>
                           <div class="mu-single-event">
                             <p class="mu-event-time">17:00</p>
-                            <h3>Fim da maratona, premiação e coffee de fechamento</h3>
+                            <h3>Encerramento + Happy Hour</h3>
                           </div>
                         </li>
                       </ul>
                     </div>
-
 
                 </div>
 
@@ -229,27 +249,82 @@
               </div>
 
               <!-- Start Speakers Content -->
-              <div class="mu-speakers-content">
-                <!-- Start single speaker -->
-                <div class="mu-single-speakers">
-                  <img src="assets/images/ulisses.jpg" alt="speaker img">
-                  <div class="mu-single-speakers-info">
-                    <h3>Ulisses Almeida</h3>
-                    <p>Software Developer na Plataformatec</p>
-                  </div>
-                </div>
-                <!-- End single speaker -->
+              <div class="row speakers-first-row">
 
-                <!-- Start single speaker -->
-                <div class="mu-single-speakers">
-                  <img src="assets/images/pufe.jpg" alt="speaker img">
-                  <div class="mu-single-speakers-info">
-                    <h3>Daniel Moreira (Pufe)</h3>
-                    <p>Data Bender na Quero Educação</p>
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/joao-vitor.jpg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>João Vitor</h3>
+                      <p>Web Developer na Quero Educação</p>
+                    </div>
                   </div>
+                  <!-- End single speaker -->
                 </div>
-                <!-- End single speaker -->
 
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/felipe-renan.jpeg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>Felipe Renan</h3>
+                      <p>Developer na Plataformatec</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/erich.jpeg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>Erich Rodrigues</h3>
+                      <p>Web Developer na Quero Educação</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/joao-britto.jpg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>João Britto</h3>
+                      <p>Software Engineer na Plataformatec</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-md-offset-3">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/otto.png" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>Otto Henrique</h3>
+                      <p>Developer na Quero Educação</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <!-- Start single speaker -->
+                  <div class="mu-single-speakers">
+                    <img src="assets/images/marcelo-koga.jpg" alt="speaker img">
+                    <div class="mu-single-speakers-info">
+                      <h3>Marcelo Koga</h3>
+                      <p>Developer na Quero Educação</p>
+                    </div>
+                  </div>
+                  <!-- End single speaker -->
+                </div>
               </div>
               <!-- End Speakers Content -->
 
@@ -259,6 +334,97 @@
       </div>
     </section>
     <!-- End Speakers -->
+
+    <section id="mu-editions">
+      <div class="container">
+        <div class="mu-schedule-area">
+          <div class="mu-title-area">
+            <h2 class="mu-title">EDIÇÕES ANTERIORES</h2>
+            <br>
+            <br>
+            <h3><a href="2017" target="_blank">2017</a></h3>
+            <br>
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <!-- <span>2º Elixir Day, 2017</span> -->
+              <img class="" src="assets/images/2017/ElixirDay_4811-min.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_4818-min.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_4712-min.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_5039-min.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_4524-min.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2017/ElixirDay_5161-min.jpg" alt="Elixir Day 2017">
+            </div>
+          </div>
+
+          <div class="mu-title-area">
+            <br>
+            <br>
+            <h3>2016</h3>
+            <br>
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <!-- <span>2º Elixir Day, 2017</span> -->
+              <img class="" src="assets/images/2016/P1020782-min.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020999-min.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020793-min.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020906-min.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/P1020767-min.JPG" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4">
+              <img class="" src="assets/images/2016/elixir-day-2016-min.jpg" alt="Elixir Day 2017">
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Start Venue -->
     <section id="mu-venue">
@@ -276,7 +442,6 @@
               <h2>LOCAL</h2>
               <h3>Escritório da Quero Educação</h3>
               <h4>Avenida São João, 1701, São José dos Campos - SP</h4>
-              <p>Carinhosamente apelidado de "Castelinho", nosso novo espaço é um grande upgrade em relação ao escritório do ano passado. Apesar de não ser uma estrutura imutável, nosso escritório ficou muito mais funcional! (pun intended)</p>
             </div>
           </div>
 
@@ -299,6 +464,7 @@
                 <div class="mu-social-media">
                   <a target="_blank" href="https://www.facebook.com/queroedu"><i class="fa fa-facebook"></i></a>
                   <a target="_blank" href="https://twitter.com/search?q=%23elixirday"><i class="fa fa-twitter"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/queroedu"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
               <!-- End Contact Content -->
@@ -334,6 +500,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Custom js -->
     <script type="text/javascript" src="assets/js/custom.js"></script>
-
+    <script type="text/javascript" src="assets/js/TweenLite.min.js"></script>
+    <script type="text/javascript" src="assets/js/EasePack.min.js"></script>
+    <script type="text/javascript" src="assets/js/background.js"></script>
   </body>
 </html>
